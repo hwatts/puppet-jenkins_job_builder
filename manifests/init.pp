@@ -55,5 +55,6 @@ class jenkins_job_builder(
 
   class {'jenkins_job_builder::install': } ->
   class {'jenkins_job_builder::config': } ->
+  class {'jenkins_job_builder::createjobs': } ->
   Class['jenkins_job_builder']
 }
