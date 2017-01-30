@@ -41,7 +41,8 @@ class jenkins_job_builder(
   $user = $jenkins_job_builder::params::user,
   $password = $jenkins_job_builder::params::password,
   $hipchat_token = $jenkins_job_builder::params::hipchat_token,
-  $jenkins_url = $jenkins_job_builder::params::jenkins_url
+  $jenkins_url = $jenkins_job_builder::params::jenkins_url,
+  $python_packages = $jenkins_job_builder::params::python_packages
 ) inherits jenkins_job_builder::params {
 
   validate_re($::osfamily,'RedHat|Debian',"${::operatingsystem} not supported")
